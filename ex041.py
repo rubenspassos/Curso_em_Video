@@ -13,11 +13,11 @@ if idade <= 9:
     print('Até 9 anos: Categoria \33[34mMIRIM\33[m')
     if (hoje.month,hoje.day) == (nasc.month, nasc.day):
         print('PARABENS HOJE É SEU ANIVERSARIO')
-elif idade >= 10 and idade <= 14:
+elif idade <= 14:
     print('Até 14 anos: Categoria \33[34mINFANTIL\33[m ')
     if (hoje.month,hoje.day) == (nasc.month, nasc.day):
         print('PARABENS HOJE É SEU ANIVERSARIO')
-elif idade >= 15 and idade <= 19:
+elif idade <= 19:
     print('Até 19 anos: Categoria \33[34mJUNIOR\33[m')
     if (hoje.month,hoje.day) == (nasc.month, nasc.day):
         print('PARABENS HOJE É SEU ANIVERSARIO')

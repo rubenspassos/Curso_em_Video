@@ -1,7 +1,5 @@
-km = float(input('Digite a distancia da viagem em km: '))
-'''if km <= 200:
-    valor = km * 0.50
-else:
-    valor = km * 0.45'''
-valor = km * 0.50 if km <= 200 else km * 0.45
-print('O valor da viagem será de R${:.2f}'.format(valor))
+nome = str(input('Digite seu nome completo: ')).strip().title()
+dividido = nome.split()
+print("Primeiro nome", dividido[0])
+var = (len(dividido)-1)
+print("Ultimo nome", dividido[var])

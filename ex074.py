@@ -1,5 +1,5 @@
 from random import randint
-'''while True:
+while True:
     for cont in range (0,5):
         aleatorio = randint(0,100)
         if cont == 0:
@@ -23,14 +23,5 @@ from random import randint
     break
 print(f'Os valores sorteados foram {tupla}')
 print(f'\nO maior valor sorteado foi {maior}')
-print(f'O menor valor sorteado foi {menor}')'''
-
-aleatorio = (randint(0,10), randint(0,10), randint(0,10),
-             randint(0,10), randint(0,10))
-print('Os valores sorteados foram: ', end='')
-for n in aleatorio:
-    print(f'{n} ', end='')
-#print(f'Os valores sorteados foram {aleatorio}')
-print(f'\nO maior valor sorteado foi {max(aleatorio)}')
-print(f'O menor valor sorteado foi {min(aleatorio)}')
+print(f'O menor valor sorteado foi {menor}')
 
