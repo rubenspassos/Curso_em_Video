@@ -1,2 +1,2 @@
-# Curso_em_Video
+# Curso em Video Python
  Exercícios das Aulas de Python | Gustavo Guanabara
