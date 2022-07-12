@@ -2,8 +2,8 @@ lista = []
 for cont in range(0,5):
     lista.append(int(input('Digite um valor: ')))
 print(f'Você digitou os valores{lista}')
-print(f'O maior valor digitado foi {max(lista)} na posição',end='')
 
+print(f'O maior valor digitado foi {max(lista)} na posição',end='')
 for c, l in enumerate(lista):
     if max(lista) == lista[c]:
         print(f' {c}...', end='')
