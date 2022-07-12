@@ -1,8 +1,8 @@
 num = [2 , 5 , 9 , 1] # Criando lisa []
 num [2] = 3 # O espaço 2 da lista recebe o valor 3
 num.append(7) # Insere valor 7 no final da lista
-num.sort(reverse=True) #Apenas sort organiza de forma crescente/ reveser=True d
-                       # e forma decrescente
+num.sort(reverse=True) #Apenas sort organiza de forma crescente/ reveser=True
+                       # de forma decrescente
 num.insert(2,0) #Insere o valor 0 na posição 2
 num.pop() #remove a ultima posisção
 num.remove(2) #Remove o valor 2 da lista, caso encontre
