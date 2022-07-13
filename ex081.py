@@ -10,6 +10,6 @@ while True:
     if opção == 'N':
         break
 print(f'Voce digitou {len(lista)}  números')
-print(f'Os numeros digitados em ordem descrescente é {sorted(reverse=True)}')
+print(f'Os numeros digitados em ordem descrescente é {sort(lista)}')
 if 5 in lista:
     print('O valor 5 foi digitado na lista')
