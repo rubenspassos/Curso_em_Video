@@ -7,9 +7,10 @@ print(f'O maior valor digitado foi {max(lista)} na posição',end='')
 for c, l in enumerate(lista):
     if max(lista) == lista[c]:
         print(f' {c}...', end='')
-
-print(f'\nO menor valor digitado foi {min(lista)} na posição', end='')
+print()
+print(f'O menor valor digitado foi {min(lista)} na posição', end='')
 for c , l in enumerate(lista):
     if min(lista) == lista[c]:
         print(f' {c}...', end='')
+print()
 
