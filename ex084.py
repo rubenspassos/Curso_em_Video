@@ -14,10 +14,10 @@ while True:
         break
 
 print(f'Ao todo você cadastrou {len(dados)} pessoas')
-maior = cont = 0
+maior = cont = menor 0
 for p in dados:
     if cont == 0:
-        maior = p[1]
+        maior = menor = p[1]
         cont += 1
     if p[1] >= maior:
         print(f'{p[1]} é o maior peso, {p[0]}')
