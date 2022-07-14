@@ -14,8 +14,7 @@ while True:
 for n in lista:
     if n % 2 == 0:
         listapar.append(n)
-for n in lista:
-    if n % 2 == 1:
+    elif n % 2 == 1:
         listaimpar.append(n)
 print('-=' * 20)
 print(f'A lista compra é {lista}')
