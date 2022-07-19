@@ -1,4 +1,4 @@
-matriz = []
+matriz = [] # Inicia a lista
 for cont in range (0,3):
     matriz.append(int(input(f'Digite o valor [0,{cont}] ')))
 cont = 0
@@ -7,14 +7,13 @@ for cont in range (0,3):
 cont = 0
 for cont in range (0,3):
     matriz.append(int(input(f'Digite o valor [2,{cont}] ')))
-print(matriz)
 print('=-' * 20)
 acumulador = 0
 maior = 0
 soma = 0
 for n in range(0,9):
     if n % 3 == 0 and n != 0:
-        print('')
+        print()
     print(f'[  {matriz[n]}  ]', end='')
     if matriz[n] % 2 == 0:
         acumulador += matriz[n]
