@@ -20,7 +20,7 @@ while True:
 print(f'Ao todo você cadastrou {len(dados)} pessoas')
 nomemaior = []
 nomemenor = []
-
+# Confere o maior e menor peso, e guarda o nome na lista e o peso na variável
 for p in dados:
     if cont == 0:
         maior = p[1]
