@@ -8,6 +8,7 @@ while True:
     nome.append(float(input('Digite o peso: ')))
     dados.append(nome[:])
     nome.clear()
+# Tratamento para não aceitar valores diferentes de "N" e "S"
     while True:
         opção = str(input('Deseja Continuar? [S/N] ').upper().strip()[0])
         if opção == 'S' or opção == 'N':
@@ -28,7 +29,7 @@ for p in dados:
         cont += 1
     if p[1] >= maior:
         maior = p[1]
-        nomemaior.append(p[0])
+        nomemaior.append(p[0]) # Obs. Não havia necessidade de criar outra lista, poderia ser usado ex: for p in dados:
     if p[1] <= menor:
         menor = p[1]
         nomemenor.append(p[0])
