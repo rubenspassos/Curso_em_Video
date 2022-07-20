@@ -1,12 +1,15 @@
 pares = []
 impares = []
 numeral = []
+#numeral = [[],[]] poderia ser declarado dessa forma
 for cont in range(0,7):
     num = (int(input("Digite um valor: ")))
     if num % 2 == 0:
         pares.append(num)
+        # numeral[0].append(num) : Receberia o valor dessa forma
     else:
         impares.append(num)
+        # numeral[1].append(num)
 numeral.append(pares)
 numeral.append(impares)
 print(f'Os nuemros digitados foram {numeral}')
