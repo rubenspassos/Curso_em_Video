@@ -18,9 +18,9 @@ while True:
             print('Opção invalida digite novamente')
     if op == 'N':
         break
-print('-=' * 40)
+print('-' * 30)
 print(f'{"Nº":<4}{"Nome":<15}{"Média":>11}')
-print('-' * 20)
+print('-' * 30)
 acum = 0
 acum2 = 0
 for c in range(0,cont):
@@ -37,4 +37,4 @@ while True:
         print('Opção invalida, digite novamente: ')
     else:
         break
-print(f'{"Fim Programa!!!":=^40}')
+print(f'{"Fim Programa!!!":=^30}')
