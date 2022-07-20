@@ -3,7 +3,7 @@ from random import randint
 from time import sleep
 le = []
 print('-' * 40)
-print('JOGA NA MEGA SENA')
+print(f'{"JOGA NA MEGA SENA": ^40}')
 print('-' * 40)
 op = int(input('Quantos jogos você quer que eu sorteie? '))
 print(f'SORTEANDO {op} JOGOS')
