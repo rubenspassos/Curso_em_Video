@@ -4,7 +4,7 @@ dados = list()
 maior = cont = menor = 0
 
 while True:
-    nome.append(str(input('Digite o nome: ')))
+    nome.append(str(input('Digite o nome: ').title().strip()))
     nome.append(float(input('Digite o peso: ')))
     dados.append(nome[:])
     nome.clear()
