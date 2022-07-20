@@ -34,7 +34,7 @@ for p in dados:
         nomemenor.append(p[0])
 if dados[0][1] > menor: # Resolve o problema do primeiro nome na lista nomemenor, quando não é o menor.
     del nomemenor[0]
-
+# Imprime o maior peso, e os nomes conforme a lista correspondente
 print(f'O maior peso foi de {maior}Kg. Peso de ', end = '')
 for c in range(0,len(nomemaior)):
     print(f'{nomemaior[c]} ', end='')
