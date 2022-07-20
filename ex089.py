@@ -26,7 +26,7 @@ acum2 = 0
 for c in range(0,cont):
     print(f'{c:<4}{lt[acum2][acum][0]:<15}', end = '')
     acum += 1
-    print(f'{(lt[acum2][acum][0]+lt[acum2][acum][1])/2:>11}')
+    print(f'{(lt[acum2][acum][0]+lt[acum2][acum][1])/2:>11.1f}')
     acum = 0
     acum2 += 1
 while True:
