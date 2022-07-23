@@ -1,9 +1,9 @@
 pessoas = dict()
 geral = list()
 opção = ''
-soma = 0
+soma = media = 0
 while True:
-    pessoas['nome'] = str(input('Nome: '))
+    pessoas['nome'] = str(input('Nome: ').title().strip())
     pessoas['sexo'] = str(input('Sexo: ').upper().strip()[0])
     pessoas['idade'] = int(input('Idade: '))
     geral.append(pessoas.copy())
@@ -15,21 +15,28 @@ while True:
             print('Opção inválida, digite novamente')
     if opção == "N":
         break
-print(geral)
-print(f'Foram cadastradas {len(geral)} pessoas')
-val = 0
+print('-=' * 30)
+print(f'- Foram cadastradas {len(geral)} pessoas')
 for c in geral:
-    for val in c.keys():
-        if val == 'idade':
-            print(c.values())
-            #soma += val
-soma = soma / len(geral)
-print(soma)
-print(f'A média das idades cadastradas é de {soma}')
-'''for c in geral:
-    for m,n in c.items():
-        if c.items('sexo') == 'F':
-            print(c)'''
+    for ind, val in c.items():
+        if ind == 'idade':
+            soma += val
+media = soma / len(geral)
+print(f'- A média das idades cadastradas é de {media}')
+print('- As mulheres cadastradas foram: ' , end='')
+for c in geral:
+    for val in c.values():
+        if val == "F":
+            print(c['nome'], end=' ')
+print()
+print('- Lista de Pessoas que estão acima da média: ')
+for c in geral:
+    for ind, val in c.items():
+        if c['idade'] > media:
+            print(f'{ind} = {val}; ', end='')
+    print()
+
+
 
 
 
