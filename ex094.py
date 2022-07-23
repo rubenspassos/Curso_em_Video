@@ -7,8 +7,8 @@ while True:
     pessoas['sexo'] = str(input('Sexo: ').upper().strip()[0])
     pessoas['idade'] = int(input('Idade: '))
     geral.append(pessoas.copy())
-    opção = str(input('Deseja continuar? [S/N]: ').upper().strip()[0])
     while True:
+        opção = str(input('Deseja continuar? [S/N]: ').upper().strip()[0])
         if opção == "S" or opção == "N":
             break
         else:
