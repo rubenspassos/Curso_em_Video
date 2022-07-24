@@ -4,15 +4,18 @@ opção = ''
 soma = media = 0
 while True:
     pessoas['nome'] = str(input('Nome: ').title().strip())
-    pessoas['sexo'] = str(input('Sexo: ').upper().strip()[0])
+    while True:
+        pessoas['sexo'] = str(input('Sexo: ').upper().strip()[0])
+        if pessoas['sexo'] in 'MF':
+            break
+        print('ERRO! Por favor, figite apenas M ou F. ')
     pessoas['idade'] = int(input('Idade: '))
     geral.append(pessoas.copy())
     while True:
         opção = str(input('Deseja continuar? [S/N]: ').upper().strip()[0])
-        if opção == "S" or opção == "N":
+        if opção in 'SN':
             break
-        else:
-            print('Opção inválida, digite novamente')
+        print('Opção inválida, digite novamente')
     if opção == "N":
         break
 print('-=' * 30)
@@ -22,12 +25,11 @@ for c in geral:
         if ind == 'idade':
             soma += val
 media = soma / len(geral)
-print(f'- A média das idades cadastradas é de {media}')
+print(f'- A média das idades cadastradas é de {media:.2f}')
 print('- As mulheres cadastradas foram: ' , end='')
 for c in geral:
-    for val in c.values():
-        if val == "F":
-            print(c['nome'], end=' ')
+    if c['sexo'] in "F":
+        print(c['nome'], end=' ')
 print()
 print('- Lista de Pessoas que estão acima da média: ')
 for c in geral:
