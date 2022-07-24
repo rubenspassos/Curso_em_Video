@@ -25,6 +25,7 @@ print('-=' * 20)
 print('cod ', end='')
 #print(f'{"cod":<5}{"nome":<8}{"gols":<20}{"total":>4}')
 for ind, val in enumerate(inf_jog.keys()):
+    #if para formatação especifica por linha
     if ind == len(inf_jog)-3:
         print(f'{val:<10}', end='')
     if ind == len(inf_jog)-2:
@@ -50,14 +51,12 @@ print()
 print('-' * 40)
 #print(jogadores[0]['partidas'])
 while True:
-    dados = int(input('Mostrar dados de qual jogador? '))
+    dados = int(input('Mostrar dados de qual jogador? (999 para parar) '))
     if dados == 999:
         break
     elif dados < len(jogadores):
         print(f'--- LEVANTAMENTO DO JOGADOR: {jogadores[dados]["nome"]}')
-        cont = 1
-        for val in jogadores[dados]['partidas']:
-            print(f'No jogo {cont} fez {val} gols')
-            cont += 1
+        for ind, val in enumerate(jogadores[dados]['partidas']):
+            print(f'No jogo {ind+1} fez {val} gols')
     elif dados >= len(jogadores):
         print(f'ERRO! Não exite jogador com código {dados}! Tente novamente ')
