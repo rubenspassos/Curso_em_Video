@@ -1,6 +1,6 @@
 aluno = dict()
 aluno['nome'] = str(input('Digite o nome do aluno: ').capitalize().strip())
-aluno['Média'] = float(input('Digite a média do aluno: '))
+aluno['Média'] = float(input(f'Digite a média do aluno {aluno["nome"]}: '))
 if aluno['Média'] >= 5:
     aluno['Situação'] = 'Aprovado'
 else:
