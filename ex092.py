@@ -9,6 +9,6 @@ if trabaiador['carteira'] != 0:
     trabaiador['salaraio'] = float(input('Salário: R$ '))
     trabaiador['aposentadoria'] = trabaiador['idade'] + (trabaiador['admissão'] + 35) - datetime.now().year
 print(trabaiador)
-for n,m in trabaiador.items():
-    print(f'{n} tem o valor {m}')
+for ind,val in trabaiador.items():
+    print(f'{ind} tem o valor {val}')
 
