@@ -60,3 +60,5 @@ while True:
             print(f'No jogo {ind+1} fez {val} gols')
     elif dados >= len(jogadores):
         print(f'ERRO! Não exite jogador com código {dados}! Tente novamente ')
+    print('--' * 20)
+print(f'{"VOLTE SEMPRE":=^20}')
