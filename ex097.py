@@ -1,8 +1,8 @@
-def prt(txt):
+def escreva(txt):
     tam = len(txt) + 10
     print('-' * tam)
     print(f'{txt.center(tam)}')
     print('-' * tam)
 
 
-prt(input("Digite o texto: "))
+escreva(input("Digite o texto: "))

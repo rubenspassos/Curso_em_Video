@@ -5,7 +5,7 @@ def conta(a,b,c):
     if c < 0:
         c *= (-1)
     print(f'Contagem de {a} a {b} de {abs(c)} em {abs(c)}')# Não há necessidade do abs(),
-    # ele serve para imprimir o numero sempre maior, conforme solicitado no exercicio,
+    # ele serve para imprimir o número sempre maior, conforme solicitado no exercício,
     # porem o if anterior já esta tratando isto.
 
     if a > b:
@@ -20,5 +20,7 @@ def conta(a,b,c):
 
 
 conta(1,10,1)
-conta(b=0,a =10,c = -2)
-conta(a = int(input('Inicio: ')), b = int(input('Fim: ')), c = int(input('Passo: ')))
+conta(10,0,2)
+conta(a = int(input('Inicio: ')),
+      b = int(input('Fim: ')),
+      c = int(input('Passo: ')))
