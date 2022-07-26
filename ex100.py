@@ -9,13 +9,13 @@ def sorteio(* num):
     print('Pronto!')
 
 
-def somaPar():
+def somaPar(lista):
     par = 0
-    for ind, val in enumerate(numeros):
-        if numeros[ind] % 2 == 0:
-            par += val
+    for ind in numeros:
+        if ind % 2 == 0:
+            par += ind
     print(f'Somando os valores pares de {numeros}, temos {par}')
 
 numeros=[0,0,0,0,0]
-sorteio(numeros[:])
-somaPar()
+sorteio(numeros)
+somaPar(numeros)
