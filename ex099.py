@@ -1,27 +1,29 @@
+# Desempacotamento de parâmetros
 def maior(* num):
+# importar biblioteca para ter pausas durante a execução do código
     from time import sleep
     print('-=' * 30)
-    c = len(num[0])
-    for ind in num[0]:
+    cont = maioral = 0
+    # c = len(maior())
+# Criar laço para imprimir valores da função maior
+    for ind in num:
         print(f'{ind}', end=' ')
         sleep(.3)
-    print(f'Foram informados {c} valores ao todo')
-    if len(num[0]) > 0:
-        print(f'O maior valor foi {max(num[0])}')
-    else:
-        print(f'O maior valor foi {0}')
+        # Armazenar maior valor
+        if cont == 0:
+            maioral = ind
+        else:
+            if ind > maioral:
+                maioral = ind
+        cont += 1
+# Imprimir valores obtidos
+    print(f'Foram informados {cont} valores ao todo')
+    print(f'O maior valor foi {maioral}')
 
 
+maior(2,9,4,5,7,1)
+maior(4,7,0)
+maior(1,2)
+maior(6)
+maior()
 
-numero = [5,6,54,3,2,5,1,89,4]
-maior(numero)
-numero.clear()
-numero = [6,3,5,9]
-maior(numero)
-numero.clear()
-numero = [6]
-maior(numero)
-numero.clear()
-numero = []
-maior(numero)
-numero.clear()
