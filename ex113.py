@@ -5,10 +5,10 @@ def leiaInt(num):
             break
         except ValueError:
             print('\033[31mERRO!!!! Digite um número inteiro\033[m')
-        # except KeyboardInterrupt:
-        #     print('O Usuário preferiu não digitar o valor')
-        #     num = 0
-        #     break
+        except KeyboardInterrupt:
+            print('O Usuário preferiu não digitar o valor')
+            num = 0
+            break
     return num
 
 def leiaFloat(num):
